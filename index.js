@@ -2,17 +2,21 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 
+
 mongoose.set('strictQuery', false);
-const path =require('path');
+
 const app = express();
 dotenv.config();
 
-app.use(express.static(path.join(__dirname, 'Public')))
 
-app.get('/', (req,res)=>{
-  res.render('Index.html')
-})
-app.listen(process.env.PORT, () =>{console.log('Server listening on port ${process.env.PORT}')})
+app.use(express.static('public'))
+
+app.get('/',(_req,res)=>{
+  res.render('index.html');
+  });
+app.listen(5500,'127.0.0.1')
+
+
 const connect = async () =>{
 try {
     await mongoose.connect(process.env.MONGO);
