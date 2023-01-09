@@ -5,14 +5,16 @@ import mongoose from "mongoose";
 
 mongoose.set('strictQuery', false);
 
+
 const app = express();
 dotenv.config();
 
+const url = 'mongodb://127.0.0.1:5500'
 
 app.use(express.static('public'))
 
-app.get('/',(_req,res)=>{
-  res.render('index.html');
+app.get('/' , (_req,res)=>{
+  res.send('<html><body><h1>Hello World</h1></body></html>');
   });
 app.listen(5500,'127.0.0.1')
 
