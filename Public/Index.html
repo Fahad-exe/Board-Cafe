@@ -61,7 +61,7 @@
                        <!-- <img src=""> -->
                     </div>
                     <h2>cappuccino</h2>
-                    <h3>tasty food</h3>
+                    <h3>tasty Italian coffee</h3>
                     <span>£6</span>
                     <i class='bx bx-cart'></i>
                 </div>
@@ -70,7 +70,7 @@
                        <!-- <img src=""> -->
                     </div>
                     <h2>Latte</h2>
-                    <h3>tasty food</h3>
+                    <h3>One of our speciality</h3>
                     <span>£8</span>
                     <i class='bx bx-cart'></i>
                 </div>
@@ -79,7 +79,7 @@
                        <!-- <img src=""> -->
                     </div>
                     <h2>Black Coffee</h2>
-                    <h3>tasty food</h3>
+                    <h3>The original and most liked</h3>
                     <span>£10</span>
                     <i class='bx bx-cart'></i>
                 </div>
@@ -90,25 +90,25 @@
         <section class="services" id="services">
             <div class="heading">
                 <span>Services</span>
-                <h2>We provide best quality food</h2>
+                <h2>We provide the best Board Cafe experience</h2>
             </div>
             <div class="service-container">
                 <div class="s-box">
                     <img src="">
-                    <h3>order</h3>
-                    <p>some more nonsense i need to write</p>
+                    <h3>ORDER</h3>
+                    <p>Order online to have your favourite drink while playing</p>
                 </div>
 
                 <div class="s-box">
                     <img src="">
-                    <h3>Booking</h3>
-                    <p>some more nonsense i need to write</p>
+                    <h3>BOOKING</h3>
+                    <p>Reserve tables to find them empty while going in</p>
                 </div>
 
                 <div class="s-box">
                     <img src="">
-                    <h3>Host</h3>
-                    <p>some more nonsense i need to write</p>
+                    <h3>HOST</h3>
+                    <p>Host a party with your friends and family in the Cafe</p>
                 </div>
             </div>
         </section>
@@ -122,8 +122,8 @@
                 </div>
                 <div class="card-content">
                     
-                    <form>
-                        <div class="form-row" id="form-row">
+                    <form action="/submit-booking-data" method="post">
+                        <div class="form-row" id="form-row" >
                             <select name="days">
                                 <option value="day-select">Select Day</option>
                                 <option value="sunday">Sunday</option>
@@ -149,11 +149,11 @@
                             </select>
                         </div>
                         <div class="form-row">
-                            <input type="text" placeholder="Full Name">
-                            <input type="text" placeholder="Phone Number">
+                            <input  name="FullName" type="text" placeholder="Full Name">
+                            <input  name="PhoneNumber" type="text" placeholder="Phone Number">
                         </div>
                         <div class="form-row">
-                            <input type="number" placeholder="How many People?">
+                            <input  type="number" placeholder="How many People?" min="1" max="6">
                             <input type="submit" placeholder="Book Table">
                         </div>
                     </form>
