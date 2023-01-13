@@ -122,9 +122,9 @@
                 </div>
                 <div class="card-content">
                     
-                    <form action="/submit-booking-data" method="post">
+                    <form action="/Booking" method="post">
                         <div class="form-row" id="form-row" >
-                            <select name="days">
+                            <select name="Days">
                                 <option value="day-select">Select Day</option>
                                 <option value="sunday">Sunday</option>
                                 <option value="monday">Monday</option>
@@ -135,7 +135,7 @@
                                 <option value="saturday">Saturday</option>
                             </select>
 
-                            <select name="hours">
+                            <select name="Hours">
                                 <option value="hour-select">Select Hour</option>
                                 <option value="16">16:00</option>
                                 <option value="17">17:00</option>
@@ -153,7 +153,7 @@
                             <input  name="PhoneNumber" type="text" placeholder="Phone Number">
                         </div>
                         <div class="form-row">
-                            <input  type="number" placeholder="How many People?" min="1" max="6">
+                            <input  name="PeopleNumber" type="Number" placeholder="How many People?" min="1" max="6">
                             <input type="submit" placeholder="Book Table">
                         </div>
                     </form>
