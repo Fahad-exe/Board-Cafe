@@ -95,6 +95,9 @@ section{
     transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
+.button{
+    visibility: hidden;
+}
 .about{
     display: grid;
     grid-template-columns: repeat(2,2fr);

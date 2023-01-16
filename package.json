@@ -1,0 +1,37 @@
+{
+  "name": "board-cafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fahad-exe/Board-Cafe.git"
+  },
+  "keywords": [],
+  "author": "Fahad",
+  "license": "ISC",
+  "engines": {
+    "node": "18.13.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Fahad-exe/Board-Cafe/issues"
+  },
+  "homepage": "https://github.com/Fahad-exe/Board-Cafe#readme",
+  "dependencies": {
+    "body-parser": "^1.11.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jest": "^29.3.1",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "socket.io": "^4.5.4",
+    "ws": "^8.12.0"
+  }
+}

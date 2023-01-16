@@ -1,20 +1,12 @@
 import mongoose from 'mongoose';
 
-const bookingSchema = new mongoose.Schema({
+var bookingSchema = new mongoose.Schema({
 
 FullName:{
-    type: String,
-    required:true
+    type: String
 },
 PhoneNumber:{
-    type:Number,
-    required:true
-},
-PeopleNumber:{
-    type:Number,
-    min:1,
-    max:6,
-    required:true
+    type:Number
 }
 })
 
