@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import BookingRoute from "./API/routes/BookingRoutes.js";
-import availableroute from "./API/routes/AvailableRoute.js";
 import { Server, Socket } from "socket.io";
 import { createServer } from "http";
 const app = express();
@@ -37,10 +36,14 @@ app.use(express.json())
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static('public'));
-app.use("/Booking", BookingRoute);
-app.use("/Available", availableroute);
+app.use("/",BookingRoute);
 
 
+app.use("/Booking", function(req,res,next){
+  res.send("Booking is confirmed");
+  next()
+ 
+})
 app.get('/' , function(req,res,next){
   res.sendFile('index.html');
   });
@@ -58,7 +61,7 @@ app.get('/' , function(req,res,next){
   console.log("new client")
 });
 
- server.listen(PORT  , () =>{
+ server.listen(PORT, () =>{
     connect();
     console.log("Connected to backend.");
 });

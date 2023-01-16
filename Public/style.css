@@ -311,7 +311,7 @@ font-weight: 600;
 form select, form input{
     display: block;
     min-width: 100%;
-    margin: 15px 12px;
+    margin: 12px 20px;
     padding: 5px;
     font-size: 1rem;
     outline: none;
@@ -324,6 +324,13 @@ form input[type=text], form input[type=number],form input::placeholder,select{
     background: var(--bg-color);
     color: var(--text-color);
     border-radius: 0.5rem;
+}
+form select[type = date]{
+    display: grid;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 0.5rem;
+    left: 10px;
 }
 form input[type = submit]{
     display: inline-block;

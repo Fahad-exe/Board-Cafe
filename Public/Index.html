@@ -124,18 +124,7 @@
                     
                     <form action="/Booking" method="post">
                         <div class="form-row" id="form-row" >
-                            <select name="Days">
-                                <option value="day-select">Select Day</option>
-                                <option value="sunday">Sunday</option>
-                                <option value="monday">Monday</option>
-                                <option value="tuesday">Tuesday</option>
-                                <option value="wednesday">Wednesday</option>
-                                <option value="thursday">Thursday</option>
-                                <option value="friday">Friday</option>
-                                <option value="saturday">Saturday</option>
-                            </select>
-
-                            <select name="Hours">
+                            <select name="Hours" type="date">
                                 <option value="hour-select">Select Hour</option>
                                 <option value="16">16:00</option>
                                 <option value="17">17:00</option>
@@ -150,10 +139,10 @@
                         </div>
                         <div class="form-row">
                             <input  name="FullName" type="text" placeholder="Full Name">
-                            <input  name="PhoneNumber" type="text" placeholder="Phone Number">
+                            <input  name="PhoneNumber" type="text" placeholder="Phone Number" maxlength=11>
                         </div>
                         <div class="form-row">
-                            <input  name="PeopleNumber" type="Number" placeholder="How many People?" min="1" max="6">
+                            <input  name="PeopleCount" type="Number" placeholder="How many People?" min="1" max="6">
                             <input type="submit" placeholder="Book Table">
                         </div>
                     </form>
